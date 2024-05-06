@@ -1,0 +1,49 @@
+// img_shop.scss
+
+$lock_img: url("/assets/img/main/lock.png");
+$shop_img: url("/assets/img/main/Icon-15.png");
+$dict_img: url("/assets/img/main/Icon-14.png");
+
+$mdse_1_1: url("/assets/img/shop/1_med_1.png");
+$mdse_1_2: url("/assets/img/shop/1_med_2.png");
+$mdse_1_3: url("/assets/img/shop/1_pkg_1.png");
+$mdse_1_4: url("/assets/img/shop/1_pkg_2.png");
+$mdse_1_5: url("/assets/img/shop/1_pkg_3.png");
+$mdse_1_6: url("/assets/img/shop/1_sword_1.png");
+$mdse_2_1: url("/assets/img/shop/1_sword_2.png");
+$mdse_2_2: url("/assets/img/shop/1_sword_3.png");
+$mdse_2_3: url("/assets/img/main/lock2.png");
+$mdse_2_4: url("/assets/img/main/lock2.png");
+.lock_img {
+    background-image: $lock_img;
+}
+.mdse_1_1 {
+    background-image: $mdse_1_1;
+}
+.mdse_1_2 {
+    background-image: $mdse_1_2;
+}
+.mdse_1_3 {
+    background-image: $mdse_1_3;
+}
+.mdse_1_4 {
+    background-image: $mdse_1_4;
+}
+.mdse_1_5 {
+    background-image: $mdse_1_5;
+}
+.mdse_1_6 {
+    background-image: $mdse_1_6;
+}
+.mdse_2_1 {
+    background-image: $mdse_2_1;
+}
+.mdse_2_2 {
+    background-image: $mdse_2_2;
+}
+.mdse_2_3 {
+    background-image: $mdse_2_3;
+}
+.mdse_2_4 {
+    background-image: $mdse_2_4;
+}

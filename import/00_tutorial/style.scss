@@ -1,0 +1,96 @@
+// tutorial/style.scss
+
+@import "../import/10_initData/global.scss";
+#tutorialArea {
+  width: 850px;
+  height: 850px;
+  // border: 3px solid #ffffff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#middleTArea {
+  height: 490px;
+  // border: 3px solid #ffffff;
+}
+#keyboardTArea {
+  flex-direction: column;
+  // border: 3px solid #ffffff;
+
+}
+#tourPassBtn{
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  margin: 10px;
+  padding: 8px 25px 5px;
+  border-radius: 5px;
+  border: 3px solid white;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 200ms;
+}#tourPassBtn:hover{
+  color: white;
+  border-radius: 30px;
+  border: 3px solid white;
+  scale: 1.2;
+}
+#tourNextBtn {
+  position: absolute;
+  padding: 8px 25px 5px;
+  border-radius: 5px;
+  border: 3px solid white;
+  color: white;
+  cursor: pointer;
+  transition: all 200ms;
+}#tourNextBtn:hover{
+  color: white;
+  border-radius: 30px;
+  border: 3px solid white;
+  scale: 1.2;
+}
+
+
+.nextBtn1 {
+  margin-top: 630px;
+  margin-left: 400px;
+  animation: showAnim 2s;
+} 
+.nextBtn2 {
+  margin-top: 630px;
+  margin-left: 400px;
+  animation: showAnim 2s;
+} 
+.nextBtn3 {
+  margin-top: 410px;
+  margin-left: 1200px;
+  animation: showAnim 2s;
+}
+.nextBtn6 {
+  margin-top: 150px;
+  margin-left: 800px;
+  animation: showAnim 2s;
+}
+.nextBtn7 {
+  margin-top: 320px;
+  margin-left: 400px;
+  animation: showAnim 2s;
+}
+
+
+#hint_img1 {
+  background-image: url("/assets/img/hint/hint-1.png");
+}
+#hint_img2 {
+  background-image: url("/assets/img/hint/hint-2.png");
+}
+
+@keyframes tourFinAnim {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+    }
+  .tourFin {
+    animation: tourFinAnim .5s;
+    }
+

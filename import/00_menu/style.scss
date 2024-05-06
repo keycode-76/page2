@@ -1,0 +1,191 @@
+// menu/style.scss
+
+// _variables.scss
+@import "../import/10_initData/global.scss";
+
+// width: calc(#{$imgWidth} / 2);
+$imgWidth: calc(2000/ 2);
+$imgHeight: calc(500/ 2);
+#menuImgDiv {
+    width: calc($imgWidth/2)+px;
+    background-size: cover;
+    // border: 3px solid white;
+    justify-content: center;
+}
+#menuImg {
+    // border: 3px solid red;
+    background-image: $menu_tit;
+    animation: menuAnim 1.5s steps(2) infinite;  
+    width: #{$imgWidth}px;
+    height: #{$imgHeight}px;
+    background-size: cover;
+}
+@keyframes menuAnim {
+to {
+    background-position-x: -#{$imgWidth}px;
+}
+}
+body { // only menu
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    button {
+        all: unset;
+    }
+}
+#menuArea {
+    margin: auto 0px;
+    flex-direction: column;
+    align-items: center;
+    // border: 3px solid red;
+}
+#menuDiv {
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    // border: 3px solid white;
+    button {
+        width: 100px;
+        height: 20px;
+        margin: 20px;
+        padding: 10px 5px;
+        border-radius: 5px;
+        // background-color: rgb(200, 200, 200);
+        border: 3px solid white;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        transition: all 200ms;
+    }
+    button:hover{
+        color: white;
+        border-radius: 30px;
+        border: 3px solid white;
+        scale: 1.2;
+        // transition: all 200ms;
+
+    }
+}
+
+#saveSlotDiv {
+    width: 500px;
+    height: 500px;
+    // background-color: $color_1_1;
+    // border: 3px solid white;
+    *{
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    #saveSlotLabel {
+        margin-top: 20px;
+        font-size: 30px;
+        color: $color_1_3;
+    }
+    .slot_btn:hover{
+        color: white;
+        scale: 1.03;
+        // border: 3px solid white;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .slotDiv {
+        align-items: center;
+        // justify-content: center;
+    }
+    .slot_btn {
+        all: unset;
+        width: 380px;
+        height: 100px;
+        margin: 10px 0px;
+        padding-top: 5px;
+        background-color: $color_1_3;
+        border-radius: 10px;
+        // border: 3px solid white;
+        flex-direction: column;
+        color: rgba($color: $color_1_2, $alpha: 0.8);
+        letter-spacing: 0.15em;
+        font-size: 15px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .slotInfo {
+        width: 95%;
+        height: 70%;
+        margin: 3px auto;
+        // border: 3px solid white;
+        background-color: $color_1_1;
+        border-radius: 2px;
+        justify-content: center;
+        font-family: $font_rg;
+        font-size: 30px;
+        * {
+            flex-direction: column;
+        }
+        h4 {
+            width: 90px;
+            height: 50%; 
+            // margin-top: -10px;
+            // border: 3px solid gray;
+            // justify-content: center;
+            font-size: 18px;
+        }
+    }
+    .slotCHAL { //textContent = 0
+        color: $color_1_3;
+    }
+    .slotGrade {
+        color: $color_4;
+    }
+    .slotMoney {
+        color: $color_5;
+    }
+    .slotLevel {
+        color: $color_1_3;
+    }
+    button {
+        width: 100px;
+        height: 40px;
+        margin: 10px;
+        padding: 8px 25px;
+        border-radius: 5px;
+        // background-color: rgb(200, 200, 200);
+        border: 3px solid white;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        // text-align: center;
+        transition: all 200ms;
+    }
+    button:hover{
+        color: white;
+        border-radius: 30px;
+        border: 3px solid white;
+        scale: 1.2;
+        // transition: all 200ms;
+    }
+    .slotDel_btn { // X
+        all: unset;
+        width: 30px;
+        height: 30px;
+        border-radius: 10px;
+        color: rgba($color: white, $alpha: 0.3);
+        cursor: pointer;
+        // border: 3px solid gray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .slotDel_btn:hover {
+        scale: 2;
+        color: white;
+        scale: 1.08;
+        border: 0;
+        transition: all 0.2s ease-in-out;
+    }
+}
+

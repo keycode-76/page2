@@ -1,0 +1,84 @@
+// prologue/style.scss
+
+@import "../import/10_initData/global.scss"; // data
+
+@keyframes prolFightFinAnim {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+.prolFightFin {
+  animation: prolFightFinAnim .5s;
+  }
+@keyframes prolPassFinAnim {
+  0% { opacity: 1; }
+  100% { opacity: 0; }  
+}
+.prolPassFin {
+  animation: prolPassFinAnim .5s;
+  }
+
+
+#prologueArea {
+  width: 100%;
+  margin: auto 5px;
+  color: white;
+  flex-direction: column;
+  // border: 3px solid white;
+  align-items: center;
+  font-size: 30px;
+}
+#prolLvlDiv {
+  width: 300px;
+  padding: 10px;
+  // background-color: $color_6;
+  border-radius: 5px;
+  justify-content: center;
+  color: white;
+  animation: showAnim .5s;
+
+}
+#prolMainDiv {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  padding: 10px;
+  // border: 3px solid white;
+  background-color: $color_1_5;
+  border-radius: 5px;
+  flex-direction: column;
+  align-items: center;
+}
+#prolBounty {
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  // border: 3px solid white;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  color: $color_5;
+  animation: fadeInAnim_2 .7s linear;
+  animation-delay: 10ms;
+}
+#prolBlood {
+  animation: fadeInAnim_2 .7s linear;
+  animation-delay: 30ms;
+
+}
+#prolBtnDiv { // 按鈕
+    * {
+    margin: 20px;
+    padding: 8px 25px;
+    border-radius: 5px;
+    border: 3px solid white;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 200ms;
+  }
+  *:hover{
+    border-radius: 30px;
+    scale: 1.2;
+  }
+}

@@ -1,0 +1,43 @@
+// main/style.scss
+
+@import "../import/10_initData/global.scss"; // data
+
+
+body {
+  background-color: $color_1_1;
+  * {
+    display: flex;
+    box-sizing: border-box;
+  }
+  button {
+    all: unset;
+  }
+  #app {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    background-color: $color_1_1;
+    align-items: center;
+    font-family: $font_regular;
+    // background-color: gray;
+    
+  }
+  #gameArea {
+    width: 850px;
+    height: 850px;
+    // border: 3px solid white;
+    flex-direction: column;
+  }
+  #headArea {
+    height: 125px;
+  }
+  #middleArea {
+    height: 470px;
+    margin-bottom: 10px;
+    // border: 3px solid red;
+  }
+  // #keyBoardArea {
+    // border: 3px solid red;
+  // }
+}
+

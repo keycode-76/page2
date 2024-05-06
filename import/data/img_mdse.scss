@@ -1,0 +1,52 @@
+// img_mdse.scss
+
+// img
+$mdse_1_1: url("/assets/img/shop/1_med_1.png");
+$mdse_1_2: url("/assets/img/shop/1_med_2.png");
+$mdse_1_3: url("/assets/img/shop/1_pkg_1.png");
+$mdse_1_4: url("/assets/img/shop/1_pkg_2.png");
+$mdse_1_5: url("/assets/img/shop/1_pkg_3.png");
+$mdse_1_6: url("/assets/img/shop/star.png");
+
+$mdse_2_1: url("/assets/img/shop/1_sword_1.png");
+$mdse_2_2: url("/assets/img/shop/1_sword_2.png");
+$mdse_2_3: url("/assets/img/shop/1_sword_3.png");
+$mdse_2_4: url("/assets/img/shop/shield_1.png");
+$mdse_2_5: url("/assets/img/shop/shield_2.png");
+
+.mdse_1_1 {
+    background-image: $mdse_1_1;
+}
+.mdse_1_2 {
+    background-image: $mdse_1_2;
+}
+.mdse_1_3 {
+    background-image: $mdse_1_3;
+}
+.mdse_1_4 {
+    background-image: $mdse_1_4;
+}
+.mdse_1_5 {
+    background-image: $mdse_1_5;
+}
+.mdse_1_6 {
+    background-image: $mdse_1_6;
+}
+.mdse_2_1 {
+    background-image: $mdse_2_1;
+}
+.mdse_2_2 {
+    background-image: $mdse_2_2;
+}
+.mdse_2_3 {
+    background-image: $mdse_2_3;
+}
+.mdse_2_4 {
+    background-image: $mdse_2_4;
+}
+.mdse_2_5 {
+    background-image: $mdse_2_5;
+}
+// .mdse_2_4 {
+//     background-image: $mdse_2_4;
+// }

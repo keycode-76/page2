@@ -1,0 +1,84 @@
+// title/style.scss
+
+// import
+@import "../import/tools/variables";
+@import "../import/12_shopData/img_shop.scss";
+
+#titleArea {
+    width: 100%;
+    // border: 3px solid white;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    // font-size: 30px;
+}
+#titleLabel {
+    width: 100%;
+    // padding-left: 50px;
+    font-size: 25px;
+    // margin-left: 0px;
+    // border: 3px solid white;
+    justify-content: center;
+}
+#nextLvlBtn {
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+    margin-left: 100px;
+    padding: 8px 25px;
+    border-radius: 5px;
+    border: 3px solid white;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    // text-align: center;
+    transition: all 200ms;
+}
+#nextLvlBtn:hover{
+    color: white;
+    border-radius: 30px;
+    border: 3px solid white;
+    scale: 1.2;
+    // transition: all 200ms;
+}
+#titShopDiv {
+    // width: 40%;
+    padding-left: 180px;
+    padding-right: 100px;
+    div {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        // border: 3px solid white;
+        border-radius: 10px;
+        background-size: cover;
+        // background-image: url("/assets/img/main/lock.png");;
+    }
+} 
+#titShopBtn {
+    background-image: $shop_img;
+    // background-color: blueviolet;
+    background-size: cover;
+}
+// #titTreasureBtn {
+//     background-color: yellow;
+// }
+// #titBugCollBtn {
+//     background-color: green;
+// }
+// #titKeyCollBtn {
+//     background-color: red;
+// }
+#titDictBtn {
+    background-image: $dict_img;
+    // background-color: gray;
+    background-size: cover;
+}
+@keyframes shopFinAnim {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+.shopFin {
+    animation: shopFinAnim 1s;
+}

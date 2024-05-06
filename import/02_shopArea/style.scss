@@ -1,0 +1,164 @@
+// shop/style.js
+
+// import
+@import "../import/10_initData/global.scss";
+@import "../import/12_shopData/img_shop.scss";
+
+
+@keyframes getCoinAnim {
+    0% { transform: translateY(60%); opacity: 0; }
+    20% { transform: translateY(10%); opacity: 1; }
+    40% { transform: translateY(20%); }
+    100% { transform: translateY(20%); }
+}
+.getCoin {
+    animation: getCoinAnim 1s linear;
+}
+
+#shopContainer {
+    // width: 95%;
+    // height: 100%;
+    // margin-left: 10px;
+    padding: 15px;
+    background-color: $color_1_5;
+    border: 3px solid $color_1_4; 
+    border-radius: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#mdseContainer {
+    width: 100%; 
+    // height: 100%;
+    background-color: $color_1_1;
+    border: 3px solid $color_1_2; 
+    border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+    #mdseArea { 
+        padding: 10px; 
+        // border: 3px solid white; 
+        display: inline-grid;  
+        grid-template-columns: repeat(4, auto);
+        gap: 10px;
+    } 
+} 
+.mdseItem {
+    flex-direction: column;
+    padding-top: 3px;
+    font-family: $font_thin;
+    cursor: pointer;
+    .mdseName {
+        // border: 3px solid white;
+        justify-content: center;
+        color: $color_3_3;
+        font-size: 10px;
+    }
+    .mdseImg {
+        width: 50px;
+        height: 50px;
+        margin: 0px auto;
+        // border: 3px solid white;
+        background-color:  $color_1_4;
+        border-radius: 5px;
+        background-size: cover;
+        animation: shake_2 3s infinite;
+    }
+    .mdsePrice {
+        width: 55px;
+        height: 22px;
+        margin: 5px auto;
+        padding-top: 3px;
+        border: 2px solid $color_1_1;
+        background-color: $color_1_2;
+        border-radius: 15px;
+        justify-content: center;
+        color: white;
+        // letter-spacing: 0.1em;
+        font-size: 14px;
+    }
+}
+.mdseItem:hover{
+    scale:1.1;
+    transform: rotate(-2deg);
+    opacity: 1;
+    // background-color:  $color_1_2;
+    transition: all .1s ease-in;
+}
+
+#shopCounter {
+    width: 100%;
+    height: 120px;
+    // border: 3px solid white;
+    flex-direction: column;
+    color: white;
+    #mdseBankArea{
+        height: 60%;
+    // border: 3px solid red;
+    }
+}
+#mdseInfoName {
+    width: 120%;
+    padding-left: 35px;
+    // border: 3px solid red;
+    align-items: center;
+    color: $color_3_3;
+    font-size: 18px;
+}
+#userMoney {
+    width: 80%;
+    position: relative;
+    // border: 3px solid white;
+    justify-content: end;
+    align-items: center;
+    font-size: 22px;
+}
+#usergetCoin {
+    width: 80%;
+    // border: 3px solid red;
+    justify-content: end;
+    margin-top: -20px;
+    margin-left: -170px;
+}
+#bankImg {
+    width: 60px;
+    height: 30px;
+    margin-right: 0px;
+    background-image: $bank_coin;
+    // border: 3px solid red;
+    background-size: cover;
+}
+#mdseInfoArea {  
+    #mdseInfoBox {
+        width: 350px;
+        height: 80px;
+        margin-left: 30px;
+        margin-right: 10px;
+        padding: 10px;
+        // border: 3px solid $color_1_3;
+        background-color: $color_1_4;
+        border-radius: 5px;
+        color: $color_5;
+    }
+    #shopPurchaseBtn {
+        width: 70px;
+        height: 40px;
+        background-color: $color_1_3;
+        border-radius: 30px;
+        justify-content: center;
+        align-items: center;
+        color: $color_1_4;
+        font-size: 20px;
+        transition: all .2s;
+    }
+    #shopPurchaseBtn:hover {
+        scale: 1.05;
+        background-color: $color_3_2;
+    }
+}  
+
+
+.clickMdse {
+    border: 5px solid  $color_3_3;
+}
+    

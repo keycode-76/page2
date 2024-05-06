@@ -1,0 +1,64 @@
+// setting/style.scss
+
+@import "../import/10_initData/global.scss";
+@keyframes settingAnim {
+    0% { opacity: 0.9; }
+    40% { transform: translateY(-5%); }
+    90% { transform: translateY(2%); }
+    100% { transform: translateY(0%); }
+  }
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+.setDivBox {
+    width: 400px;
+    margin: auto;
+    padding: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $color_1;
+    border: 3px solid $color_1_3;
+    border-radius: 5px;
+    animation: settingAnim .25s ease-in-out;
+    label {
+        font-size: 35px;
+        // margin-top: 0;
+        color: $color_1_3;
+    }
+    button {
+        width: 120px;
+        height: 40px;
+        margin: 10px;
+        padding: 0px 20px;
+        border-radius: 5px;
+        // background-color: rgb(200, 200, 200);
+        border: 3px solid white;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        text-align: center;
+        transition: all 200ms;
+    }
+    button:hover{
+        color: white;
+        border-radius: 30px;
+        border: 3px solid white;
+        scale: 1.2;
+        // transition: all 200ms;
+    }
+}
+#setBackMenuBtn {
+    // width: 200px;
+    height: 50px;
+    font-size: 18px;
+}

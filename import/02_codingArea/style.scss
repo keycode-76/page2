@@ -1,0 +1,111 @@
+// code/style.scss
+
+@import "../import/10_initData/global.scss"; // data
+
+@keyframes lvlFinAnim {
+  0% { opacity: 0; }
+  100% { opacity: 0.1; }
+}
+@keyframes finLabelAnim {
+  0% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(2); opacity: 0; }
+}
+
+@keyframes rotateAnim {
+  0% { transform: rotate(-365deg) translateX(-3px) rotate(365deg); }
+    100% { transform: rotate(-0deg) translateX(-3px) rotate(0deg); }
+}
+.finLabel {
+  animation: finLabelAnim .3s ;
+}
+.lvlFin {
+  animation: lvlFinAnim .5s;
+}
+
+#codeAreaDiv {
+  width: 100%;
+  margin-left: -100%;
+  padding-left: 26%;
+  flex-direction: column;
+  // border: 1px solid white;
+}
+#codingInput {
+  all: unset;
+  // margin-top: 330px;
+  margin: 330px auto;
+  margin-left: 110px;
+  color: rgba($color: white, $alpha: 0.02);
+  // opacity: 0;
+}
+#labelContainer {
+  justify-content: center;
+  display: inline-block;
+  margin-top: 155px;
+  // font-size: 10px;
+  // border: 3px solid white;
+  animation: rotateAnim 5s linear infinite;
+}
+#labelContainer > :nth-child(1) {
+  color: blue;
+  transform: rotate(-35deg) translateX(150px) rotate(35deg); 
+}
+#labelContainer > :nth-child(2) {
+  // top: 50%;
+    // left: 50%;
+  color: red;
+  transform: rotate(-90deg) translateX(150px) rotate(90deg); 
+  // transform: translateX(50%);
+}
+#labelContainer > :nth-child(3) {
+  color: green;
+  transform: rotate(-170deg) translateX(150px) rotate(170deg);  
+}
+#labelContainer > :nth-child(4) {
+  color: yellow;
+  transform: rotate(-220deg) translateX(150px) rotate(220deg);  
+}
+#labelContainer > :nth-child(5) {
+  color: gray;
+  transform: rotate(-350deg) translateX(150px) rotate(350deg); 
+}
+.codeLabelDiv {
+  position: absolute;
+  width: 400px;
+  height: 45px;
+  padding: 15px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.codeLabel {
+  min-width: 35px;
+  padding: 5px;
+  // padding-top: 5px;
+  border: 2px solid white;
+  background-color: $color_1_3;
+  border-radius: 100px;
+  justify-content: center;
+  font-family: $font_bold;
+  font-size: 20px;
+}
+.dot{
+  // position:absolute;
+  top:0;
+  left:0;
+  width:300px;
+  height:50px;
+  // background:blue;
+  border-radius:10px;
+}
+.activeLabel {
+  color: $color_2;
+}
+#lvlComText {
+  width: 100%;
+  margin: 45% auto;
+  text-align: center;
+  color: white;
+  // opacity: 10%;
+  font-size: 30px;
+}
+    

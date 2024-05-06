@@ -1,0 +1,64 @@
+// img_off.scss (attack)
+
+//import
+@import "../import/10_initData/global.scss";
+
+// img
+$off_0_1: url("/assets/img/shop/sword_1.png");
+$off_0_2: url("/assets/img/shop/sword_2.png");
+$off_0_3: url("/assets/img/shop/sword_3.png");
+$off_1_1: url("/assets/img/shop/sword_1.png");
+$off_1_2: url("/assets/img/shop/sword_2.png");
+$off_1_3: url("/assets/img/shop/sword_3.png");
+$off_2_1: url("/assets/img/shop/shield_1.png");
+$off_2_2: url("/assets/img/shop/shield_2.png");
+$off_2_3: url("/assets/img/shop/shield_2.png");
+
+.off_0_1 {
+    // background-image: $off_0_1;
+    background-color: $key_color_0_1;
+}
+.off_0_2 {
+    // background-image: $off_0_2;
+    background-color: $key_color_0_1;
+}
+.off_0_3 {
+    // background-image: $off_0_3;
+    background-color: $key_color_0_1;
+}
+.off_1_1 {
+    // background-image: $off_1_1;
+    background-color: $key_color_1_1;
+}
+.off_1_2 {
+    // background-image: $off_1_2;
+    background-color: $key_color_1_2;
+}
+.off_1_3 {
+    // background-image: $off_1_3;
+    background-color: $key_color_1_3;
+}
+.off_2_1 {
+    // background-image: $off_2_1;
+    background-color: $key_color_2_1;
+}
+.off_2_2 {
+    // background-image: $off_2_2;
+    background-color: $key_color_2_2;
+}
+.off_2_3 {
+    // background-image: $off_2_3;
+    background-color: $key_color_2_3;
+}
+.off_3_1 {
+    // background-image: $off_2_1;
+    background-color: $key_color_2_1;
+}
+.off_3_2 {
+    // background-image: $off_2_2;
+    background-color: $key_color_2_2;
+}
+.off_3_3 {
+    // background-image: $off_2_3;
+    background-color: $key_color_2_3;
+}

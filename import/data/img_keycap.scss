@@ -1,0 +1,130 @@
+// img_keycap.scss
+
+@import "../import/10_initData/global.scss";
+// img
+$key_0_1: url("/assets/img/keyCaps/0_1.png");
+$key_1_1: url("/assets/img/keyCaps/1_1.png");
+$key_1_2: url("/assets/img/keyCaps/1_2.png");
+$key_1_3: url("/assets/img/keyCaps/1_3.png");
+$key_1_4: url("/assets/img/keyCaps/1_4.png");
+$key_2_1: url("/assets/img/keyCaps/2_1.png");
+$key_2_2: url("/assets/img/keyCaps/2_2.png");
+$key_2_3: url("/assets/img/keyCaps/2_3.png");
+$key_3_1: url("/assets/img/keyCaps/3_1.png");
+$key_3_2: url("/assets/img/keyCaps/3_2.png");
+$key_3_3: url("/assets/img/keyCaps/3_3.png");
+
+.key_0_1::before {
+    content: "";
+    width: 180px;
+    height: 180px;
+    margin: -35px;
+    margin-top: -20px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-image: $key_0_1;
+    animation: keyManAnim 1s infinite; 
+}
+.key_1_1::before {
+    content: "";
+    width: 180px;
+    height: 180px;
+    margin: -35px;
+    margin-top: -20px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-image: $key_1_1;
+    animation: keyManAnim 1s infinite; 
+}
+.key_1_2::before {
+    content: "";
+    width: 180px;
+    height: 180px;
+    margin: -35px;
+    margin-top: -20px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-image: $key_1_2;
+}
+.key_1_3::before {
+    content: "";
+    width: 180px;
+    height: 180px;
+    margin: -35px;
+    margin-top: -20px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-image: $key_1_3;
+}
+.key_1_4::before {
+    content: "";
+    width: 180px;
+    height: 180px;
+    margin: -35px;
+    margin-top: -20px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-image: $key_1_4;
+}
+
+.key_2_1::before {
+    content: "";
+    width: 180px;
+    height: 180px;
+    margin: -35px;
+    margin-top: -20px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-image: $key_2_1;
+}
+.key_2_2::before {
+    content: "";
+    width: 180px;
+    height: 180px;
+    margin: -35px;
+    margin-top: -20px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-image: $key_2_2;
+}
+.key_2_3::before {
+    content: "";
+    width: 180px;
+    height: 180px;
+    margin: -35px;
+    margin-top: -20px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-image: $key_2_3;
+}
+
+.key_3_1::before {
+    content: "";
+    width: 180px;
+    height: 180px;
+    margin: -35px;
+    margin-top: -20px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-image: $key_3_1;
+}
+.key_3_2::before {
+    content: "";
+    width: 180px;
+    height: 180px;
+    margin: -35px;
+    margin-top: -20px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-image: $key_3_2;
+}
+.key_3_3::before {
+    content: "";
+    width: 180px;
+    height: 180px;
+    margin: -35px;
+    margin-top: -20px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-image: $key_3_3;
+}

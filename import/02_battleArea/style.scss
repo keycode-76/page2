@@ -1,0 +1,194 @@
+// battle/style.css
+
+// import
+@import "../import/10_initData/global.scss";
+@import "../import/11_bossData/all_img.scss";
+@import "../import/10_initData/img_off.scss"; // off
+
+@keyframes finBossAnim {
+  0% {transform: scale(1); }
+  100% {transform:  scale(0.8); }
+}
+@keyframes koBossAnim {
+  0% {transform: translateY(-40%) }
+  100% {transform: scale(1); }
+}
+@keyframes bossWinAnim {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.5); }
+}
+@keyframes bossHeartAnim {
+  0% { transform: translateY(-4%) scale(1); }
+  50% { transform:  scale(1.1); }
+}
+@keyframes attactScoreAnim {
+  0% { transform: translateY(0%); }
+  20% { transform: translateY(-180%); }
+  30% { transform: translateY(-180%); }
+  40% { transform: translateY(-200%) scale(2); }
+  60% { transform: translateY(-200%) scale(2); }
+  60% { transform: translateY(-200%) scale(1); }
+  90% { transform: translateY(-200%); }
+  95% { transform: translateY(50%); }
+  100% { transform: translateY(0%); }
+}
+.finBoss {
+  animation: finBossAnim 4s steps(20);
+}
+.bossWin {
+  animation: bossWinAnim 2s;
+}
+.fadeIn {
+  animation: fadeInAnim .300s linear;
+}
+.attactScore {
+  animation: attactScoreAnim .6000s linear;
+}
+
+
+#battleDiv {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+}
+#bossContainer {
+  width: 100%;
+  margin-bottom: 20px;
+  // border: 3px solid white;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  #bossDiv {
+    width: 310px;
+    height: 310px;
+    // border: 3px solid white;
+    flex-direction: column;
+    background-size: cover;
+    #bossImg {
+      width: 310px;
+      height: 310px;
+      background-size: cover;
+    }
+  }
+  #bossTitle{
+    color: white;
+    font-size: 30px;
+    opacity: 0.5;
+  }
+  .bossBloodDiv {
+    width: 60px;
+    height: 60px;
+    margin: 5px auto;
+    padding-top: 10px;
+    background-image: $boss_heart;
+    background-size: cover;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    animation: bossHeartAnim 0.5s infinite;
+    // opacity: 0.4;
+  }
+}
+#attackArea {
+  width: 450px;
+  // border: 3px white solid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+  #scoreDiv{
+    width: 25px;
+    height: 25px;
+    // padding: 10px;
+    margin-bottom: -10px;
+    background-color: $color_1_6;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    z-index: 1;
+  }
+  #cardContainer {
+      min-width: 440px;
+      height: 50px;
+      padding-left: 10px;
+      padding-right: 10px;
+      // border: 3px solid $color_1_3;
+      // background-color: $color_1_6;
+      border-radius: 5px;
+      box-sizing: border-box;
+      align-items: center;
+      overflow-x: hide;
+      overflow-y: hide;
+      gap: 5px;
+      .cardDiv {
+          width: 30px;
+          height: 30px;
+          padding-top: 8px;
+          // padding-left: 8px;
+          // border: 3px solid white;
+          background-size: cover;
+          border-radius: 5px;
+          justify-content: center;
+          align-items: center;
+          color: rgba($color: white, $alpha: 0.8);
+          font-size: 25px;
+          
+      }
+      .cardOff {
+        width: 10px;
+        height: 10px;
+        margin-left: -5px;
+        margin-right: -5px;
+        margin-bottom: -20px;
+        padding-top: 2px;
+        // border: 3px solid white;
+        border-radius: 20px;
+        background-color: $color_1;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 10px;
+      }
+  }
+
+
+.userWin {
+  height: 10px;
+  // border: 3px solid white;
+  justify-content: center;
+  color: white;
+  font-size: 140px;
+  opacity: 0;
+}
+.KO {
+    height: 1000px;
+    padding-top: 160px;
+    color: orange;
+    font-size: 140px;
+    opacity: 1;
+    transition: all .400s steps(30);
+}
+.userLose {
+  height: 10px;
+  // border: 3px solid white;
+  justify-content: center;
+  color: white;
+  font-size: 140px;
+  opacity: 0;
+}
+.LOSE {
+    height: 1000px;
+    padding-top: 100px;
+    color: red;
+    font-size: 140px;
+    opacity: 1;
+    transition: all .400s steps(30);
+}

@@ -1,0 +1,103 @@
+// 03_dictionary/style.scss
+
+// import
+@import "../import/10_initData/global.scss";
+#dictionArea {
+    width: 145%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: $color_2;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#pageContentArea {
+    width: 100%; 
+    height: 150%;
+    background-color: $color_1_4;
+    border-radius: 10px;
+    // border: 3px solid $color_3; 
+    justify-content: center;
+    color: white;
+    .dict_page {
+        width: 100%;
+        padding: 5px;
+        margin-right: -5px;
+        margin-bottom: -5px;
+        display: inline-grid;
+        grid-template-columns: repeat(2, auto);
+        .blockDiv {
+            width: 98%;
+            height: 95%;
+            padding: 5px;
+            background-color: $color_1_3;
+            // border: 3px solid white; 
+            flex-direction: column;
+            border-radius: 5px;
+            font-size: 15px;
+            color: $color_1_2;
+            transition: all 0.2s ease-in-out;
+        }
+        .blockDiv:focus {
+            color: white;
+        }
+        .blockInfo {
+            width: 100%;
+            margin-bottom: 0px;
+            // background-color: $color_3;
+            color: $color_1_4;
+            font-size: 13px;
+
+        }
+    }
+}
+#pageBtnArea {
+    width: 100%; 
+    height: 50%;
+    // border: 3px solid $color_3; 
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    #pageDotDiv {
+        width: 150px;
+        justify-content: center;
+        .pageDot {
+            width: 10px;
+            height: 10px;
+            margin: auto 5px;
+            background-color: $color_3;
+            border-radius: 5px;
+        }
+    }
+    #pageRBtn {
+        width: 0;
+        // height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 20px solid $color_1_3;
+        border-radius: 3px;
+        transform: rotate(90deg);
+        cursor: pointer;
+    }
+    #pageLBtn {
+        width: 0;
+        // height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 20px solid $color_1_3;
+        border-radius: 3px;
+        transform: rotate(-90deg);
+        cursor: pointer;
+    }
+}
+// .shopPage {
+// }
+.clickDict {
+    border: 5px solid white;
+    scale: 1.04;
+
+    // * {color: white;}
+}

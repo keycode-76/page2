@@ -1,0 +1,89 @@
+// _variables.scss
+
+//color
+$color_1: rgb(49, 37, 218);
+$color_2: rgb(14, 3, 165);
+$color_3: rgb(63, 114, 198);
+$color_4: rgb(25, 204, 174);
+$color_5: rgb(255, 200, 0);
+$color_6: rgb(10, 28, 66);
+$third-color: rgb(0, 225, 255);
+$forth-color: #ff32bb;
+$forth-relate: #fbff00;
+
+// //key
+$key_color_0_1:rgb(181, 181, 181);
+// $key_color_0_2:rgb(240, 198, 143);
+// $key_color_0_3:rgb(234, 175, 98);
+
+$key_color_1_1:rgb(153, 173, 255);
+$key_color_1_2:rgb(102, 133, 255);
+$key_color_1_3:rgb(51, 92, 255);
+$key_color_1_4:rgb(0, 46, 230);
+
+$key_color_2_1:rgb(187, 153, 255);
+$key_color_2_2:rgb(153, 102, 255);
+$key_color_2_3:rgb(119, 51, 255);
+$key_color_2_4:rgb(85, 0, 255);
+
+$key_color_3_1:rgb(102, 194, 255);
+$key_color_3_2:rgb(0, 153, 255);
+$key_color_3_3:rgb(0, 105, 204);
+$key_color_3_4:rgb(0, 58, 173);
+
+
+@font-face {
+    font-family: "ConcertOne-Regular";
+    src: url('/assets/font/ConcertOne-Regular.ttf');
+  }
+@font-face {
+  font-family: "frogblock";
+  src: url('/assets/font/FROGBLOCK-V2.1-by-Polyducks.ttf');
+  
+}
+@font-face {
+  font-family: "kitchensink";
+  src: url('/assets/font/Kitchen Sink.ttf');
+} 
+@font-face {
+  font-family: "monogram";
+  src: url('/assets/font/monogram.ttf');
+}
+@font-face {
+  font-family: "PeaberryBase";
+  src: url('/assets/font/PeaberryBase.ttf');
+}
+@font-face {
+  font-family: "Notjamui12";
+  src: url('/assets/font/Not Jam UI 12.ttf');
+}
+$font_regular: "PeaberryBase";
+$font_rg: "monogram";
+$font_bold: "kitchensink";
+$font_thin: "Notjamui12";
+
+// // special background
+// @keyframes background-move {
+//   0% { background-position: 0 0, 0 0; }
+//   100% { 
+//     background-position: 100vw 0, 0 0;
+//   }
+// }
+// #textCode {
+// background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 460 55'%3E%3Cg fill='none' fill-rule='evenodd' stroke='%23fff' stroke-width='7' opacity='.1'%3E%3Cpath d='M-345 34.5s57.5-13.8 115-13.8 115 13.8 115 13.8S-57.5 48.3 0 48.3s115-13.8 115-13.8 57.5-13.8 115-13.8 115 13.8 115 13.8 57.5 13.8 115 13.8 115-13.8 115-13.8'/%3E%3Cpath d='M-345 20.7s57.5-13.8 115-13.8 115 13.8 115 13.8S-57.5 34.5 0 34.5s115-13.8 115-13.8S172.5 6.9 230 6.9s115 13.8 115 13.8 57.5 13.8 115 13.8 115-13.8 115-13.8m-920 27.6s57.5-13.8 115-13.8 115 13.8 115 13.8S-57.5 62.1 0 62.1s115-13.8 115-13.8 57.5-13.8 115-13.8 115 13.8 115 13.8 57.5 13.8 115 13.8 115-13.8 115-13.8'/%3E%3Cpath d='M-345 6.9s57.5-13.8 115-13.8S-115 6.9-115 6.9-57.5 20.7 0 20.7 115 6.9 115 6.9 172.5-6.9 230-6.9 345 6.9 345 6.9s57.5 13.8 115 13.8S575 6.9 575 6.9'/%3E%3Cpath d='M-345-6.9s57.5-13.8 115-13.8S-115-6.9-115-6.9-57.5 6.9 0 6.9 115-6.9 115-6.9s57.5-13.8 115-13.8S345-6.9 345-6.9 402.5 6.9 460 6.9 575-6.9 575-6.9m-920 69s57.5-13.8 115-13.8 115 13.8 115 13.8S-57.5 75.9 0 75.9s115-13.8 115-13.8 57.5-13.8 115-13.8 115 13.8 115 13.8 57.5 13.8 115 13.8 115-13.8 115-13.8'/%3E%3C/g%3E%3C/svg%3E%0A"),
+//       linear-gradient(80deg, $third-color, $third-color);
+//   animation: background-move 3s linear infinite;
+// }
+
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-1deg); }
+  50% { transform: rotate(1deg); }
+  75% { transform: rotate(-1deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.shaking {
+  animation: shake 8s linear infinite; /* 0.5秒为一次晃动，infinite 表示无限循环 */
+}

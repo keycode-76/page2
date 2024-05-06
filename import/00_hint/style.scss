@@ -1,0 +1,86 @@
+// hint/style.scss
+
+@import "../import/10_initData/global.scss";
+
+#hintArea {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // border: 3px solid white;
+}
+#hintDiv {
+    flex-direction: column;
+    #hintInfo {
+        width: 300px;
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color: $color_1_3;
+        // border: 3px solid white;
+        color: $color_1_2;
+        letter-spacing: 0.02em;
+        font-size: 15px;
+        z-index: 1;
+        animation: showAnim .500s;
+    }
+    #hintMove {
+        color: yellow;
+    }
+}
+
+#hint_img1 {
+    position: absolute;
+    top: 15%;
+    width: 800px;
+    height: 400px;
+    background-image: url("/assets/img/hint/hint-1.png");
+    background-color: rgb(14, 3, 165);
+    border-radius: 5px;
+    background-size: cover;
+}
+#hint_img2 {
+    position: absolute;
+    top: 15%;
+    width: 800px;
+    height: 400px;
+    background-image: url("/assets/img/hint/hint-2.png");
+    background-color: rgb(14, 3, 165);
+    border-radius: 5px;
+    background-size: cover;
+}
+.hint2 {
+    margin-top: -300px;
+}
+.hint3 {
+    margin-top: -240px;
+    margin-right: -800px;
+}
+.hint4 {
+    margin-top: -300px;
+    margin-right: -200px;
+}
+.hint5 {
+    margin-top: -660px;
+    margin-right: -720px;
+}
+.hint6 {
+    margin-top: -500px;
+    margin-right: -400px;
+}
+.hint7 {
+    margin-top: -300px;
+}
+.hint8 {
+    display: none;
+    margin-top: -300px;
+}
+.hint9 {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+.hint10 {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    // margin-top: -300px;
+}

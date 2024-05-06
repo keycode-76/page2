@@ -1,0 +1,81 @@
+// all_boss_img.scss
+
+// img
+$boss_heart: url("/assets/img/main/boss_heart.png");
+$boss_0: url("/assets/img/boss/lvl_3_3.png");
+$boss_1_1: url("/assets/img/boss/lvl_1_1.png");
+$boss_1_2: url("/assets/img/boss/lvl_1_2.png");
+$boss_1_3: url("/assets/img/boss/lvl_1_3.png");
+.boss_0 {
+    background-image: $boss_0;
+    animation: boss_idle_anim 1s linear infinite;
+}
+.boss_1_1 {
+    background-image: $boss_1_1;
+    animation: boss_idle_anim 1s linear infinite;
+}
+.boss_1_2 {
+    background-image: $boss_1_2;
+    animation: boss_idle_anim 1s linear infinite;
+}
+.boss_1_3 {
+    background-image: $boss_1_3;
+    animation: boss_idle_anim 1s linear infinite;
+}
+$boss_2_1: url("/assets/img/boss/lvl_2_1.png");
+$boss_2_2: url("/assets/img/boss/lvl_2_2.png");
+$boss_2_3: url("/assets/img/boss/lvl_2_3.png");
+.boss_2_1 {
+    background-image: $boss_2_1;
+    animation: boss_idle_anim 1s linear infinite;
+}
+.boss_2_2 {
+    background-image: $boss_2_2;
+    animation: boss_idle_anim 1s linear infinite;
+}
+.boss_2_3 {
+    background-image: $boss_2_3;
+    animation: boss_idle_anim 1s linear infinite;
+}
+$boss_3_1: url("/assets/img/boss/lvl_3_1.png");
+$boss_3_2: url("/assets/img/boss/lvl_3_2.png");
+$boss_3_3: url("/assets/img/boss/lvl_3_3.png");
+.boss_3_1 {
+    background-image: $boss_3_1;
+    animation: boss_idle_anim 1.6s linear infinite;
+}
+.boss_3_2 {
+    background-image: $boss_3_2;
+    animation: boss_idle_anim 1s linear infinite;
+}
+.boss_3_3 {
+    background-image: $boss_3_3;
+    animation: boss_idle_anim 1s linear infinite;
+}
+$boss_4_1: url("/assets/img/boss/lvl_4_1.png");
+$boss_4_2: url("/assets/img/boss/lvl_4_2.png");
+$boss_4_3: url("/assets/img/boss/lvl_4_3.png");
+.boss_4_1 {
+    background-image: $boss_4_1;
+    animation: boss_idle_anim 1.6s linear infinite;
+}
+.boss_4_2 {
+    background-image: $boss_4_2;
+    animation: boss_idle_anim 1s linear infinite;
+}
+.boss_4_3 {
+    background-image: $boss_4_3;
+    animation: boss_idle_anim 1s linear infinite;
+}
+// // special background
+@keyframes boss_idle_anim {
+    0% { transform: rotate(3deg); }
+    25% { transform: rotate(-3deg); }
+    50% { transform: rotate(3deg); }
+    75% { transform: rotate(-3deg); }
+    100% { transform: rotate(3deg); }
+}
+@keyframes boss_rotate_anim {
+    0% { transform: rotate(-0deg) translateX(5px) rotate(0deg); }
+    100% { transform: rotate(-365deg) translateX(5px) rotate(365deg); }
+}
